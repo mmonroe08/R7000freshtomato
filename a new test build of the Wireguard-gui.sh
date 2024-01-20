@@ -1,2 +1,2 @@
-https://bitbucket.org/retro42/freshtomato-arm/downloads/
-https://www.linksysinfo.org/index.php?threads/wireguard-on-freshtomato.76295/page-21
+https://bitbucket.org/pedro311/freshtomato-arm/commits/
+https://www.linksysinfo.org/index.php?threads/wireguard-on-freshtomato.76295/page-23

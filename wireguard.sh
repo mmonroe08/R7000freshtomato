@@ -31,3 +31,9 @@ ip route add 8.xx/32 via 39.65.220.1 dev ppp0
 iptables -t nat -A POSTROUTING -o wg0 -j MASQUERADE
 
 #end
+
+# configure routes
+
+# ip route del 0.0.0.0/1 dev wg0
+# ip route del 128.0.0.0/1 dev wg0
+# ip route del 8.xx/32 via 39.65.220.1 dev ppp0

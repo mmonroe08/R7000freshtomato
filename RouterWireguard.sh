@@ -1,3 +1,4 @@
+
 modprobe wireguard
 ip link add dev wg0 type wireguard
 ip address add dev wg0 10.7.0.3/32

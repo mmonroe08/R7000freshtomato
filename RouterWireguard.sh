@@ -1,23 +1,22 @@
 
 modprobe wireguard
 ip link add dev wg0 type wireguard
-ip address add dev wg0 10.7.0.3/32
+ip address add dev wg0 10.103.251.203/32
 /bin/cat << EOF > /mnt/wg0.conf
 
 [Interface]
-ListenPort = 51820
-PrivateKey = aCzn+YTs0RXi1ivhD6jGJnxLMLYRzZoCvJYuaHQ+alM=
+ListenPort =  15289
+PrivateKey = sG1CmFVM2pxzA7osKObrqGl+CUuehvDVSjE21lij8UI=
 
 [Peer]
-PublicKey = RYfrpS3SlZpUplTGWJXRndkXEMKIEEOaNxSk4b6ruVo=
-Endpoint = ip:2112
+PublicKey = Zhvg9EBQgoLKjsMWV0jT2TVtFlfXKYN1X7tafzXFdRo=
+PresharedKey = DF0KVBBL+e9OkAhIjQvilP8NdRxBWwc6GsyVk8fuk5U=
+Endpoint = 38.145.197.21:15289
 AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 25
 
+
 EOF
-
-
-
 cat /mnt/wg0.conf
 /usr/sbin/wg setconf wg0 /mnt/wg0.conf
 

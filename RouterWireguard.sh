@@ -6,12 +6,8 @@ ip address add dev wg0 10.103.251.203/32
 
 [Interface]
 ListenPort =  15289
-PrivateKey = sG1CmFVM2pxzA7osKObrqGl+CUuehvDVSjE21lij8UI=
-
-[Peer]
-PublicKey = Zhvg9EBQgoLKjsMWV0jT2TVtFlfXKYN1X7tafzXFdRo=
-PresharedKey = DF0KVBBL+e9OkAhIjQvilP8NdRxBWwc6GsyVk8fuk5U=
-Endpoint = 38.145.197.21:15289
+PrivateKey = 
+Endpoint = 10.1.1.1
 AllowedIPs = 0.0.0.0/0
 PersistentKeepalive = 25
 
